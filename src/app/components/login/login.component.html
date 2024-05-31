@@ -1,0 +1,18 @@
+<!-- login.component.html -->
+<div class="container">
+  <div>
+    <h2>Login Page</h2>
+</div>
+  <form [formGroup]="loginEmployeeForm" (ngSubmit)="loginEmployee()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+  <button (click)="getRegister()" class="btn btn-link">Register</button>
+</div>
